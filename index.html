@@ -1,0 +1,416 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Lare's Garden Services | Licensed Gardening &amp; Landscaping, San Mateo CA | (650) 400-8326</title>
+<meta name="description" content="Lare's Garden Services is a licensed C-27 landscaping contractor (CSLB 1103799) in San Mateo, CA. Weekly and biweekly garden maintenance, lawn care, pruning and hedges, planting, cleanups, irrigation repair and small landscape installs across San Mateo, Burlingame, Foster City, Belmont, San Carlos, Hillsborough and Millbrae. Bonded. Jardinería con licencia en San Mateo. Call or text (650) 400-8326.">
+<meta name="theme-color" content="#1f3d2b">
+<meta property="og:title" content="Lare's Garden Services | San Mateo, CA">
+<meta property="og:description" content="Licensed gardening and landscaping in San Mateo. Weekly maintenance, lawns, pruning, planting, irrigation. CSLB 1103799, bonded. (650) 400-8326.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,500;0,600;0,700;1,500&family=Karla:wght@400;500;600;700;800&display=swap">
+<style>
+  :root{
+    --moss:#1f3d2b; --moss-2:#2a5139; --leaf:#5aa469; --leaf-deep:#3f8a4f; --sun:#f2c94c; --terracotta:#c8704a;
+    --white:#ffffff; --linen:#f7f5ef; --linen-2:#ede9df;
+    --ink:#1b2620; --muted:#5e6c62; --line:#dfdbd0;
+    --bg:var(--linen); --surface:var(--white); --text:var(--ink);
+    --r:18px; --shadow:0 22px 44px -28px rgba(31,61,43,.45);
+  }
+  @media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#121a15;--surface:#1a241d;--linen-2:#22302a;--text:#eef3ee;--muted:#a6b5aa;--line:#2c3b31;--shadow:0 22px 44px -28px rgba(0,0,0,.7)}}
+  :root[data-theme="dark"]{--bg:#121a15;--surface:#1a241d;--linen-2:#22302a;--text:#eef3ee;--muted:#a6b5aa;--line:#2c3b31;--shadow:0 22px 44px -28px rgba(0,0,0,.7)}
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{margin:0;background:var(--bg);color:var(--text);font-family:"Karla",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;font-size:17px;line-height:1.62;-webkit-font-smoothing:antialiased}
+  img{max-width:100%;display:block}
+  a{color:inherit}
+  h1,h2,h3{font-family:"Lora",Georgia,serif;font-weight:600;line-height:1.08;letter-spacing:-.01em;margin:0}
+  h2{font-size:clamp(2.1rem,4.4vw,3.2rem)}
+  h3{font-size:1.3rem}
+  p{margin:0 0 1rem}
+  .wrap{width:min(1180px,calc(100% - 2.5rem));margin-inline:auto}
+  section{scroll-margin-top:5.4rem}
+  .eyebrow{display:inline-flex;align-items:center;gap:.6rem;font-weight:800;font-size:.74rem;letter-spacing:.2em;text-transform:uppercase;color:var(--leaf-deep)}
+  .eyebrow::before{content:"❧";color:var(--terracotta)}
+  .lead{font-size:1.1rem;color:var(--muted);max-width:60ch}
+  .btn{display:inline-flex;align-items:center;justify-content:center;gap:.5rem;padding:.95rem 1.5rem;border-radius:999px;font-weight:700;text-decoration:none;font-size:.97rem;border:2px solid transparent;transition:transform .15s,background .15s;cursor:pointer;font-family:inherit}
+  .btn:hover{transform:translateY(-2px)}
+  .btn-leaf{background:var(--leaf);color:#fff}
+  .btn-leaf:hover{background:var(--leaf-deep)}
+  .btn-sun{background:var(--sun);color:var(--moss)}
+  .btn-white{background:#fff;color:var(--moss)}
+  .btn-ghost{border-color:currentColor;background:transparent}
+  [data-es]{display:none}
+  html[lang="es"] [data-en]{display:none}
+  html[lang="es"] [data-es]{display:revert}
+
+  .topbar{background:var(--moss);color:#fff;font-size:.85rem;font-weight:600}
+  .topbar .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:.4rem 1rem;padding:.45rem 0;align-items:center}
+  .topbar b{color:var(--sun)}
+  .topbar a{color:#fff;text-decoration:none}
+  .lang{display:inline-flex;border:1px solid rgba(255,255,255,.3);border-radius:999px;overflow:hidden}
+  .lang button{background:transparent;color:#fff;border:0;padding:.25rem .7rem;font:inherit;font-weight:800;cursor:pointer;font-size:.78rem;letter-spacing:.08em}
+  .lang button.on{background:var(--sun);color:var(--moss)}
+  .site-header{position:sticky;top:0;z-index:50;background:color-mix(in srgb,var(--surface) 92%,transparent);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+  .headbar{display:flex;align-items:center;justify-content:space-between;gap:1rem;padding:.65rem 0}
+  .brand{display:flex;align-items:center;gap:.7rem;text-decoration:none}
+  .brand .mark{width:44px;height:44px;border-radius:50%;background:var(--moss);display:grid;place-items:center;flex:none}
+  .brand .mark svg{width:24px;height:24px;stroke:var(--sun);fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+  .brand b{font-family:"Lora",serif;font-weight:700;font-size:1.25rem;line-height:1;display:block}
+  .brand small{display:block;font-size:.66rem;font-weight:800;letter-spacing:.18em;text-transform:uppercase;color:var(--muted);margin-top:.2rem}
+  nav.top{display:none;gap:1.3rem;font-weight:700;font-size:.92rem}
+  nav.top a{text-decoration:none;color:var(--text);opacity:.85}
+  nav.top a:hover{opacity:1;color:var(--leaf-deep)}
+  .head-cta{display:none}
+  .tap{display:inline-flex;align-items:center;gap:.4rem;background:var(--moss);color:#fff;text-decoration:none;font-weight:700;padding:.6rem 1.05rem;border-radius:999px;font-size:.9rem}
+  @media(min-width:940px){nav.top{display:flex}.head-cta{display:block}}
+
+  .hero{background:var(--moss);color:#fff;position:relative;overflow:hidden}
+  .hero::before{content:"";position:absolute;inset:0;background:radial-gradient(60% 70% at 95% 5%,rgba(90,164,105,.35),transparent 65%),radial-gradient(40% 50% at 0% 100%,rgba(242,201,76,.14),transparent 65%)}
+  .hero-grid{position:relative;display:grid;gap:2.5rem;align-items:center;padding:4.5rem 0 4rem}
+  .hero .tag{display:inline-flex;align-items:center;gap:.6rem;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.25);padding:.45rem .95rem;border-radius:999px;font-weight:700;font-size:.74rem;letter-spacing:.16em;text-transform:uppercase;margin-bottom:1.2rem;color:var(--sun)}
+  .hero h1{font-size:clamp(2.6rem,6.4vw,4.8rem);max-width:13ch}
+  .hero h1 em{font-style:italic;color:var(--sun);font-weight:500}
+  .hero p{font-size:clamp(1.05rem,1.5vw,1.22rem);max-width:52ch;margin:1.1rem 0 1.6rem;color:rgba(255,255,255,.9)}
+  .hero-actions{display:flex;flex-wrap:wrap;gap:.9rem}
+  .hero-meta{display:flex;flex-wrap:wrap;gap:1rem 2rem;margin-top:2rem;padding-top:1.2rem;border-top:1px solid rgba(255,255,255,.18);font-size:.9rem}
+  .hero-meta b{display:block;font-family:"Lora",serif;font-size:1.5rem;line-height:1;color:var(--sun)}
+  .hero-meta span{color:rgba(255,255,255,.75)}
+  .lic-card{background:#fff;color:var(--moss);border-radius:22px;padding:1.6rem;box-shadow:0 30px 60px -30px rgba(0,0,0,.7);max-width:420px;width:100%;justify-self:center;display:grid;gap:.9rem}
+  .lic-card .lbl{font-size:.72rem;font-weight:800;letter-spacing:.18em;text-transform:uppercase;color:var(--terracotta)}
+  .lic-card .num{font-family:"Lora",serif;font-size:3rem;font-weight:700;letter-spacing:-.02em;line-height:1}
+  .lic-card dl{margin:0;display:grid;grid-template-columns:1fr 1fr;gap:.6rem .8rem;font-size:.92rem}
+  .lic-card dt{color:var(--muted);font-weight:500}
+  .lic-card dd{margin:0;font-weight:800}
+  .lic-card a.v{font-weight:800;color:var(--leaf-deep);text-decoration:none;font-size:.9rem}
+  @media(min-width:900px){.hero-grid{grid-template-columns:7fr 5fr}}
+
+  .strip{background:var(--sun);color:var(--moss)}
+  .strip-row{display:flex;flex-wrap:wrap;justify-content:center;gap:.5rem 2.4rem;padding:.8rem 0;font-weight:800;text-transform:uppercase;letter-spacing:.08em;font-size:.82rem}
+  .strip-row span::before{content:"✿";margin-right:.4rem}
+
+  .section{padding:clamp(4rem,8vw,6.5rem) 0}
+  .section-head{max-width:70ch;margin-bottom:2.4rem}
+  .section-head h2{margin:.6rem 0 .9rem}
+  .center{text-align:center;margin-inline:auto}
+  .center .lead{margin-inline:auto}
+
+  .svc-grid{display:grid;gap:1rem;grid-template-columns:1fr}
+  .svc{background:var(--surface);border:1px solid var(--line);border-radius:var(--r);padding:1.4rem;box-shadow:var(--shadow);border-top:5px solid var(--leaf)}
+  .svc .ico{width:46px;height:46px;border-radius:12px;background:var(--linen-2);display:grid;place-items:center;margin-bottom:.9rem}
+  .svc .ico svg{width:24px;height:24px;stroke:var(--leaf-deep);fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+  .svc h3{margin-bottom:.4rem}
+  .svc p{margin:0;color:var(--muted);font-size:.95rem}
+  .svc.hot{border-top-color:var(--terracotta)}
+  @media(min-width:640px){.svc-grid{grid-template-columns:repeat(2,1fr)}}
+  @media(min-width:1000px){.svc-grid{grid-template-columns:repeat(3,1fr)}}
+
+  .plans{background:var(--surface);border-block:1px solid var(--line)}
+  .plan-grid{display:grid;gap:1rem;grid-template-columns:1fr}
+  .plan{background:var(--bg);border:1px solid var(--line);border-radius:var(--r);padding:1.5rem;display:grid;gap:.8rem;align-content:start}
+  .plan .freq{font-size:.74rem;font-weight:800;letter-spacing:.18em;text-transform:uppercase;color:var(--terracotta)}
+  .plan h3{font-size:1.5rem}
+  .plan ul{list-style:none;padding:0;margin:0;display:grid;gap:.45rem;font-size:.95rem}
+  .plan li{display:flex;gap:.6rem;align-items:flex-start}
+  .plan li::before{content:"";flex:none;width:18px;height:18px;border-radius:50%;background:var(--leaf);margin-top:.2rem;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='white' stroke-width='3.2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M5 13l4 4L19 7'/%3E%3C/svg%3E");background-size:11px;background-repeat:no-repeat;background-position:center}
+  .plan.featured{background:var(--moss);color:#fff;border-color:var(--moss)}
+  .plan.featured .freq{color:var(--sun)}
+  .plan.featured li::before{background:var(--sun);background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%231f3d2b' stroke-width='3.2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M5 13l4 4L19 7'/%3E%3C/svg%3E")}
+  .plan .note{font-size:.85rem;color:var(--muted);margin:0}
+  .plan.featured .note{color:rgba(255,255,255,.75)}
+  @media(min-width:800px){.plan-grid{grid-template-columns:repeat(3,1fr)}}
+
+  .why-grid{display:grid;gap:1rem;grid-template-columns:1fr}
+  .wcard{background:var(--surface);border:1px solid var(--line);border-radius:var(--r);padding:1.3rem;display:flex;gap:1rem;align-items:flex-start;box-shadow:var(--shadow)}
+  .wcard .n{flex:none;width:40px;height:40px;border-radius:50%;background:var(--moss);color:var(--sun);display:grid;place-items:center;font-family:"Lora",serif;font-weight:700}
+  .wcard b{display:block;margin-bottom:.2rem}
+  .wcard span{color:var(--muted);font-size:.93rem}
+  @media(min-width:700px){.why-grid{grid-template-columns:repeat(2,1fr)}}
+  @media(min-width:1040px){.why-grid{grid-template-columns:repeat(4,1fr)}}
+
+  .area{background:var(--surface);border-block:1px solid var(--line)}
+  .area-grid{display:grid;gap:2rem;align-items:center}
+  .towns{display:flex;flex-wrap:wrap;gap:.5rem;margin:1.2rem 0 0}
+  .towns span{background:var(--bg);border:1px solid var(--line);padding:.45rem .85rem;border-radius:999px;font-weight:700;font-size:.88rem}
+  .towns span.base{background:var(--moss);color:var(--sun);border-color:var(--moss)}
+  .map{border-radius:var(--r);overflow:hidden;min-height:320px;background:var(--linen-2);border:1px solid var(--line)}
+  .map iframe{width:100%;height:100%;min-height:320px;border:0;display:block}
+  @media(min-width:880px){.area-grid{grid-template-columns:1fr 1fr}}
+
+  .contact{background:var(--moss);color:#fff}
+  .contact .eyebrow{color:var(--sun)}
+  .contact .eyebrow::before{color:var(--sun)}
+  .contact .lead{color:rgba(255,255,255,.8)}
+  .c-grid{display:grid;gap:2rem;align-items:start}
+  .cbox{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.14);border-radius:var(--r);padding:1.3rem 1.4rem;margin-bottom:1rem}
+  .cbox .lbl{display:block;font-size:.72rem;letter-spacing:.18em;text-transform:uppercase;color:var(--sun);font-weight:800;margin-bottom:.4rem}
+  .cbox a{color:#fff;text-decoration:none;font-family:"Lora",serif;font-weight:700;font-size:1.5rem;line-height:1}
+  .cbox a.sm{font-family:"Karla",sans-serif;font-size:1rem}
+  .cbox a:hover{color:var(--sun)}
+  .cbox small{display:block;color:rgba(255,255,255,.7);margin-top:.4rem}
+  .book{background:#fff;color:var(--ink);border-radius:20px;padding:1.5rem;display:grid;gap:.9rem;box-shadow:var(--shadow)}
+  .book h3{color:var(--moss)}
+  .book label{display:grid;gap:.3rem;font-size:.85rem;font-weight:700;color:var(--muted)}
+  .book input,.book select,.book textarea{width:100%;font:inherit;font-size:1rem;color:var(--ink);background:var(--linen);border:1px solid var(--line);border-radius:10px;padding:.7rem .85rem}
+  .book input:focus,.book select:focus,.book textarea:focus{outline:2px solid var(--leaf);border-color:var(--leaf)}
+  .book .row{display:grid;gap:.8rem}
+  @media(min-width:560px){.book .row{grid-template-columns:1fr 1fr}}
+  .book .note{font-size:.8rem;color:var(--muted);margin:0}
+  .book .fallback{display:grid;gap:.5rem;background:var(--linen);border:1px dashed var(--leaf);border-radius:10px;padding:.9rem}
+  .book .fallback textarea{font-size:.9rem}
+  @media(min-width:900px){.c-grid{grid-template-columns:5fr 7fr}}
+
+  .callbar{position:fixed;left:0;right:0;bottom:0;z-index:60;display:grid;grid-template-columns:1fr 1fr;background:var(--moss);border-top:1px solid rgba(255,255,255,.15)}
+  .callbar a{display:flex;align-items:center;justify-content:center;gap:.5rem;padding:.9rem;color:#fff;text-decoration:none;font-weight:800;font-size:.95rem}
+  .callbar a.s{background:var(--sun);color:var(--moss)}
+  @media(min-width:940px){.callbar{display:none}}
+  body{padding-bottom:3.4rem}
+  @media(min-width:940px){body{padding-bottom:0}}
+
+  footer.site{background:#15291e;color:rgba(255,255,255,.75);padding:2.2rem 0 1.6rem;font-size:.88rem;border-top:1px solid rgba(255,255,255,.08)}
+  .foot-top{display:flex;flex-wrap:wrap;gap:1.4rem;justify-content:space-between;align-items:center;margin-bottom:1.4rem}
+  .foot-top .brand b{color:#fff}
+  .foot-links{display:flex;flex-wrap:wrap;gap:1rem 1.4rem;font-weight:700}
+  .foot-links a{text-decoration:none;color:rgba(255,255,255,.85)}
+  .foot-links a:hover{color:var(--sun)}
+  .foot-note{color:rgba(255,255,255,.55);font-size:.8rem;max-width:90ch}
+
+  .reveal{opacity:0;transform:translateY(16px);transition:opacity .6s ease,transform .6s ease}
+  .reveal.in{opacity:1;transform:none}
+  @media(prefers-reduced-motion:reduce){.reveal{opacity:1;transform:none;transition:none}}
+</style>
+</head>
+<body id="top">
+
+<div class="topbar"><div class="wrap">
+  <span><span data-en><b>Licensed C-27</b> · Bonded · San Mateo, CA</span><span data-es><b>Licencia C-27</b> · Con fianza · San Mateo, CA</span></span>
+  <span style="display:inline-flex;gap:1rem;align-items:center"><a href="tel:+16504008326"><b>(650) 400-8326</b></a><span class="lang" role="group" aria-label="Language"><button type="button" data-lang="en" class="on">EN</button><button type="button" data-lang="es">ES</button></span></span>
+</div></div>
+<header class="site-header">
+  <div class="wrap headbar">
+    <a class="brand" href="#top">
+      <span class="mark" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 22V10"/><path d="M12 14c-4 0-6-3-6-7 4 0 6 3 6 7z"/><path d="M12 10c4 0 6-3 6-7-4 0-6 3-6 7z"/></svg></span>
+      <span><b>Lare&rsquo;s Garden Services</b><small>San Mateo, California</small></span>
+    </a>
+    <nav class="top" aria-label="Sections">
+      <a href="#services"><span data-en>Services</span><span data-es>Servicios</span></a>
+      <a href="#plans"><span data-en>Maintenance Plans</span><span data-es>Planes</span></a>
+      <a href="#why"><span data-en>Why Us</span><span data-es>Por qué</span></a>
+      <a href="#area"><span data-en>Area</span><span data-es>Zona</span></a>
+      <a href="#contact"><span data-en>Get a Quote</span><span data-es>Cotización</span></a>
+    </nav>
+    <div class="head-cta"><a class="tap" href="tel:+16504008326">(650) 400-8326</a></div>
+  </div>
+</header>
+
+<main>
+
+  <!-- 1. HERO -->
+  <section class="hero" id="home">
+    <div class="wrap hero-grid">
+      <div>
+        <span class="tag"><span data-en>Gardening &amp; landscaping · Since 2023</span><span data-es>Jardinería y paisajismo · Desde 2023</span></span>
+        <h1 data-en>A garden that looks <em>cared for,</em> every week.</h1>
+        <h1 data-es>Un jardín que se ve <em>cuidado,</em> cada semana.</h1>
+        <p data-en>Lare&rsquo;s Garden Services is a licensed C-27 landscaping contractor in San Mateo. Weekly and biweekly maintenance, lawn care, pruning and hedges, planting, cleanups, irrigation repair and small landscape installs &mdash; done by the owner, on a schedule you can count on.</p>
+        <p data-es>Lare&rsquo;s Garden Services es un contratista de jardinería con licencia C-27 en San Mateo. Mantenimiento semanal y quincenal, césped, poda y setos, plantación, limpiezas, reparación de riego e instalaciones pequeñas, hechas por el dueño, en un horario con el que puede contar.</p>
+        <div class="hero-actions">
+          <a class="btn btn-sun" href="#contact"><span data-en>Request a maintenance plan</span><span data-es>Solicitar plan de mantenimiento</span></a>
+          <a class="btn btn-white" href="tel:+16504008326"><span data-en>Call (650) 400-8326</span><span data-es>Llamar (650) 400-8326</span></a>
+        </div>
+        <div class="hero-meta">
+          <div><b>C-27</b><span data-en>licensed landscaper</span><span data-es>licencia de jardinería</span></div>
+          <div><b data-en>Bonded</b><b data-es>Fianza</b><span data-en>$25,000 contractor bond</span><span data-es>fianza de $25,000</span></div>
+          <div><b data-en>Owner-run</b><b data-es>El dueño</b><span data-en>same person every visit</span><span data-es>la misma persona cada visita</span></div>
+        </div>
+      </div>
+      <div class="lic-card reveal">
+        <span class="lbl" data-en>California license</span><span class="lbl" data-es>Licencia de California</span>
+        <div class="num">1103799</div>
+        <dl>
+          <dt data-en>Classification</dt><dt data-es>Clase</dt><dd data-en>C-27 Landscaping</dd><dd data-es>C-27 Jardinería</dd>
+          <dt data-en>Status</dt><dt data-es>Estado</dt><dd data-en>Active</dd><dd data-es>Activa</dd>
+          <dt data-en>Licensed since</dt><dt data-es>Desde</dt><dd>April 2023</dd>
+          <dt data-en>Bond</dt><dt data-es>Fianza</dt><dd>$25,000</dd>
+        </dl>
+        <a class="v" href="https://www.cslb.ca.gov/1103799" target="_blank" rel="noopener"><span data-en>Verify on the CSLB website →</span><span data-es>Verificar en el sitio del CSLB →</span></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- 2. STRIP -->
+  <div class="strip" aria-label="Highlights">
+    <div class="wrap strip-row">
+      <span data-en>Weekly maintenance</span><span data-es>Mantenimiento semanal</span>
+      <span data-en>Lawn care</span><span data-es>Césped</span>
+      <span data-en>Pruning &amp; hedges</span><span data-es>Poda y setos</span>
+      <span data-en>Irrigation</span><span data-es>Riego</span>
+      <span data-en>Cleanups</span><span data-es>Limpiezas</span>
+    </div>
+  </div>
+
+  <!-- 3. SERVICES -->
+  <section class="section" id="services">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <span class="eyebrow"><span data-en>Services</span><span data-es>Servicios</span></span>
+        <h2 data-en>Everything your yard needs, from one licensed gardener.</h2>
+        <h2 data-es>Todo lo que su jardín necesita, de un jardinero con licencia.</h2>
+      </div>
+      <div class="svc-grid">
+        <article class="svc hot reveal"><div class="ico"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></div><h3 data-en>Weekly &amp; biweekly maintenance</h3><h3 data-es>Mantenimiento semanal y quincenal</h3><p data-en>Mowing, edging, weeding, blowing and a walk-through of beds and plants, on the same day each week.</p><p data-es>Corte, orillado, deshierbe, soplado y revisión de camas y plantas, el mismo día cada semana.</p></article>
+        <article class="svc reveal"><div class="ico"><svg viewBox="0 0 24 24"><path d="M3 20c4-6 8-6 12-12"/><path d="M3 20c6-2 9-5 12-12"/><path d="M15 8l4-4"/></svg></div><h3 data-en>Lawn care</h3><h3 data-es>Césped</h3><p data-en>Mowing, fertilizing, aeration, overseeding and repair of thin or bare patches.</p><p data-es>Corte, fertilización, aireación, resiembra y reparación de zonas ralas o peladas.</p></article>
+        <article class="svc reveal"><div class="ico"><svg viewBox="0 0 24 24"><path d="M6 20l4-4M14 10l4-4"/><path d="M10 16l-2-2a3 3 0 014-4l2 2"/><circle cx="6" cy="20" r="1"/></svg></div><h3 data-en>Pruning &amp; hedge trimming</h3><h3 data-es>Poda y recorte de setos</h3><p data-en>Shrubs, hedges, roses, fruit trees and small ornamentals, shaped at the right time of year.</p><p data-es>Arbustos, setos, rosales, frutales y ornamentales pequeños, con forma en la época correcta del año.</p></article>
+        <article class="svc reveal"><div class="ico"><svg viewBox="0 0 24 24"><path d="M12 22V12"/><path d="M12 14c-3 0-5-2-5-6 3 0 5 2 5 6z"/><path d="M12 12c3 0 5-2 5-6-3 0-5 2-5 6z"/><path d="M5 22h14"/></svg></div><h3 data-en>Planting &amp; beds</h3><h3 data-es>Plantación y camas</h3><p data-en>New plants, seasonal color, mulch, soil amendment and bed cleanups that keep the front yard looking finished.</p><p data-es>Plantas nuevas, color de temporada, mulch, mejora de suelo y limpieza de camas para un frente bien terminado.</p></article>
+        <article class="svc reveal"><div class="ico"><svg viewBox="0 0 24 24"><path d="M4 14a8 8 0 0116 0"/><path d="M12 6V3"/><path d="M8 20h8"/><path d="M12 14v6"/></svg></div><h3 data-en>Irrigation repair</h3><h3 data-es>Reparación de riego</h3><p data-en>Broken heads, leaking valves, timer programming, drip conversions and seasonal adjustments to save water.</p><p data-es>Aspersores rotos, válvulas con fuga, programación de timers, conversión a goteo y ajustes de temporada para ahorrar agua.</p></article>
+        <article class="svc reveal"><div class="ico"><svg viewBox="0 0 24 24"><path d="M3 21h18"/><path d="M5 21V9l7-5 7 5v12"/><path d="M9 21v-5h6v5"/></svg></div><h3 data-en>Cleanups &amp; small installs</h3><h3 data-es>Limpiezas e instalaciones pequeñas</h3><p data-en>One-time yard cleanups, overgrowth removal, and small landscape installs like new beds, paths and planters.</p><p data-es>Limpiezas de una vez, retiro de maleza e instalaciones pequeñas como camas nuevas, senderos y macetas.</p></article>
+      </div>
+    </div>
+  </section>
+
+  <!-- 4. PLANS -->
+  <section class="section plans" id="plans">
+    <div class="wrap">
+      <div class="section-head center reveal">
+        <span class="eyebrow"><span data-en>Maintenance plans</span><span data-es>Planes de mantenimiento</span></span>
+        <h2 data-en>Pick a rhythm. We keep it.</h2>
+        <h2 data-es>Elija un ritmo. Nosotros lo mantenemos.</h2>
+        <p class="lead" data-en>Priced per yard after a quick walk-through. No contract &mdash; stay because the garden looks good.</p>
+        <p class="lead" data-es>Precio por jardín después de una visita rápida. Sin contrato: se queda porque el jardín se ve bien.</p>
+      </div>
+      <div class="plan-grid">
+        <div class="plan reveal"><span class="freq" data-en>Every two weeks</span><span class="freq" data-es>Cada dos semanas</span><h3 data-en>Biweekly</h3><h3 data-es>Quincenal</h3><ul><li data-en>Mow, edge, blow</li><li data-es>Corte, orillado, soplado</li><li data-en>Weeding of beds</li><li data-es>Deshierbe de camas</li><li data-en>Light pruning as needed</li><li data-es>Poda ligera según se necesite</li></ul><p class="note" data-en>Good for low-water and smaller yards.</p><p class="note" data-es>Ideal para jardines pequeños o de bajo riego.</p></div>
+        <div class="plan featured reveal"><span class="freq" data-en>Most popular</span><span class="freq" data-es>El más popular</span><h3 data-en>Weekly</h3><h3 data-es>Semanal</h3><ul><li data-en>Everything in biweekly</li><li data-es>Todo lo del plan quincenal</li><li data-en>Hedge and shrub shaping</li><li data-es>Forma de setos y arbustos</li><li data-en>Irrigation check each visit</li><li data-es>Revisión de riego en cada visita</li><li data-en>Seasonal fertilizing</li><li data-es>Fertilización de temporada</li></ul><p class="note" data-en>The standard for San Mateo front and back yards.</p><p class="note" data-es>El estándar para jardines de San Mateo.</p></div>
+        <div class="plan reveal"><span class="freq" data-en>One time</span><span class="freq" data-es>Una vez</span><h3 data-en>Cleanup &amp; reset</h3><h3 data-es>Limpieza y arranque</h3><ul><li data-en>Overgrowth and debris removed</li><li data-es>Retiro de maleza y escombro</li><li data-en>Beds cleared and mulched</li><li data-es>Camas limpias con mulch</li><li data-en>Irrigation repaired</li><li data-es>Riego reparado</li></ul><p class="note" data-en>Before a sale, a party, or starting a plan.</p><p class="note" data-es>Antes de vender, de una fiesta, o para empezar un plan.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 5. WHY -->
+  <section class="section" id="why">
+    <div class="wrap">
+      <div class="section-head center reveal">
+        <span class="eyebrow"><span data-en>Why Lare&rsquo;s</span><span data-es>Por qué Lare&rsquo;s</span></span>
+        <h2 data-en>Licensed, bonded, and the same face every week.</h2>
+        <h2 data-es>Con licencia, con fianza, y la misma cara cada semana.</h2>
+      </div>
+      <div class="why-grid">
+        <div class="wcard reveal"><span class="n">1</span><div><b data-en>State licensed, C-27</b><b data-es>Licencia estatal C-27</b><span data-en>CSLB 1103799, active and verifiable. Most gardeners in the area are not licensed at all.</span><span data-es>CSLB 1103799, activa y verificable. La mayoría de los jardineros de la zona no tienen licencia.</span></div></div>
+        <div class="wcard reveal"><span class="n">2</span><div><b data-en>Bonded $25,000</b><b data-es>Fianza de $25,000</b><span data-en>Contractor bond on file with the state through Nationwide.</span><span data-es>Fianza de contratista registrada con el estado a través de Nationwide.</span></div></div>
+        <div class="wcard reveal"><span class="n">3</span><div><b data-en>Owner does the work</b><b data-es>El dueño hace el trabajo</b><span data-en>No rotating crew. The person who quoted your yard is the person in it.</span><span data-es>Sin cuadrillas que cambian. La persona que cotizó su jardín es la que lo trabaja.</span></div></div>
+        <div class="wcard reveal"><span class="n">4</span><div><b data-en>English y español</b><b data-es>English y español</b><span data-en>Call or text in whichever is easier.</span><span data-es>Llame o mande texto en el idioma que prefiera.</span></div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 6. AREA -->
+  <section class="section area" id="area">
+    <div class="wrap area-grid">
+      <div class="reveal">
+        <span class="eyebrow"><span data-en>Service area</span><span data-es>Zona de servicio</span></span>
+        <h2 style="margin:.6rem 0 .9rem" data-en>San Mateo and the Mid-Peninsula.</h2>
+        <h2 style="margin:.6rem 0 .9rem" data-es>San Mateo y la península.</h2>
+        <p class="lead" data-en>Based in San Mateo. Regular routes through the neighbouring cities.</p>
+        <p class="lead" data-es>Con base en San Mateo. Rutas regulares por las ciudades vecinas.</p>
+        <div class="towns">
+          <span class="base">San Mateo</span><span>Burlingame</span><span>Foster City</span><span>Belmont</span><span>San Carlos</span><span>Hillsborough</span><span>Millbrae</span>
+        </div>
+      </div>
+      <div class="map reveal">
+        <iframe title="Map of San Mateo, CA" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps?q=San+Mateo,+CA&amp;z=11&amp;output=embed"></iframe>
+      </div>
+    </div>
+  </section>
+
+  <!-- 7. CONTACT + FORM -->
+  <section class="section contact" id="contact">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <span class="eyebrow"><span data-en>Get a quote</span><span data-es>Pida una cotización</span></span>
+        <h2 style="margin:.6rem 0 .9rem" data-en>Tell us about your yard.</h2>
+        <h2 style="margin:.6rem 0 .9rem" data-es>Cuéntenos de su jardín.</h2>
+        <p class="lead" data-en>Fill in the form and it goes to our phone as a text. Or just call.</p>
+        <p class="lead" data-es>Llene el formulario y nos llega como mensaje de texto. O simplemente llame.</p>
+      </div>
+      <div class="c-grid">
+        <div class="reveal">
+          <div class="cbox"><span class="lbl" data-en>Call or text</span><span class="lbl" data-es>Llame o texto</span><a href="tel:+16504008326">(650) 400-8326</a><small data-en>English y español</small><small data-es>English y español</small></div>
+          <div class="cbox"><span class="lbl" data-en>License</span><span class="lbl" data-es>Licencia</span><a class="sm" href="https://www.cslb.ca.gov/1103799" target="_blank" rel="noopener">CSLB 1103799 · C-27</a><small data-en>Bonded $25,000 · San Mateo, CA 94401</small><small data-es>Fianza $25,000 · San Mateo, CA 94401</small></div>
+        </div>
+        <form class="book reveal" id="bookForm" novalidate>
+          <h3 data-en>Maintenance plan request</h3><h3 data-es>Solicitud de plan de mantenimiento</h3>
+          <div class="row">
+            <label><span data-en>Your name</span><span data-es>Su nombre</span><input type="text" name="name" autocomplete="name" required></label>
+            <label><span data-en>Your phone</span><span data-es>Su teléfono</span><input type="tel" name="phone" autocomplete="tel" required></label>
+          </div>
+          <div class="row">
+            <label><span data-en>City</span><span data-es>Ciudad</span><select name="city"><option>San Mateo</option><option>Burlingame</option><option>Foster City</option><option>Belmont</option><option>San Carlos</option><option>Hillsborough</option><option>Millbrae</option><option data-en>Other</option></select></label>
+            <label><span data-en>Plan</span><span data-es>Plan</span><select name="plan"><option value="Weekly">Weekly / Semanal</option><option value="Biweekly">Biweekly / Quincenal</option><option value="One-time cleanup">One-time cleanup / Limpieza</option><option value="Not sure">Not sure / No sé</option></select></label>
+          </div>
+          <label><span data-en>About the yard</span><span data-es>Sobre el jardín</span><textarea name="details" rows="3" placeholder="Front and back, lawn size, hedges, irrigation issues…"></textarea></label>
+          <div class="hero-actions">
+            <button class="btn btn-leaf" type="submit"><span data-en>Send request by text</span><span data-es>Enviar por texto</span></button>
+            <a class="btn btn-ghost" style="color:var(--moss)" href="tel:+16504008326"><span data-en>Or call</span><span data-es>O llame</span></a>
+          </div>
+          <p class="note" id="bookNote"><span data-en>Tapping send opens your messaging app with the request filled in for (650) 400-8326. Nothing is stored on this site.</span><span data-es>Al enviar se abre su app de mensajes con la solicitud lista para (650) 400-8326. Nada se guarda en este sitio.</span></p>
+          <div class="fallback" id="bookFallback" hidden><span class="lbl" style="font-size:.72rem;font-weight:800;letter-spacing:.14em;text-transform:uppercase;color:var(--terracotta)" data-en>Copy and text to (650) 400-8326</span><span class="lbl" data-es>Copie y mande texto al (650) 400-8326</span><textarea id="bookText" rows="6" readonly></textarea><button class="btn btn-ghost" type="button" id="bookCopy" style="color:var(--moss)"><span data-en>Copy message</span><span data-es>Copiar mensaje</span></button></div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<div class="callbar"><a href="tel:+16504008326">📞 <span data-en>Call</span><span data-es>Llamar</span></a><a class="s" href="#contact"><span data-en>Request a plan</span><span data-es>Solicitar plan</span></a></div>
+
+<footer class="site">
+  <div class="wrap">
+    <div class="foot-top">
+      <a class="brand" href="#top">
+        <span class="mark" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 22V10"/><path d="M12 14c-4 0-6-3-6-7 4 0 6 3 6 7z"/><path d="M12 10c4 0 6-3 6-7-4 0-6 3-6 7z"/></svg></span>
+        <span><b>Lare&rsquo;s Garden Services</b><small style="color:rgba(255,255,255,.6)">San Mateo, California</small></span>
+      </a>
+      <nav class="foot-links" aria-label="Footer">
+        <a href="#services"><span data-en>Services</span><span data-es>Servicios</span></a>
+        <a href="#plans"><span data-en>Plans</span><span data-es>Planes</span></a>
+        <a href="#area"><span data-en>Area</span><span data-es>Zona</span></a>
+        <a href="#contact"><span data-en>Contact</span><span data-es>Contacto</span></a>
+        <a href="tel:+16504008326">(650) 400-8326</a>
+      </nav>
+    </div>
+    <p class="foot-note">
+      <span data-en>Lare&rsquo;s Garden Services &middot; San Mateo, CA 94401 &middot; (650) 400-8326 &middot; CSLB License 1103799, C-27 Landscaping, bonded $25,000. License and bond from the California Contractors State License Board. Service descriptions and plan contents reflect standard C-27 gardening scope; prices are quoted per yard. No reviews or job claims are presented here.</span>
+      <span data-es>Lare&rsquo;s Garden Services &middot; San Mateo, CA 94401 &middot; (650) 400-8326 &middot; Licencia CSLB 1103799, C-27 Jardinería, fianza de $25,000. Licencia y fianza según la Junta Estatal de Licencias de Contratistas de California. Los servicios y planes reflejan el alcance estándar de jardinería C-27; los precios se cotizan por jardín.</span>
+      <br>&copy; <span id="yr"></span> Lare&rsquo;s Garden Services. All rights reserved.
+    </p>
+  </div>
+</footer>
+
+<script>
+  document.getElementById('yr').textContent = new Date().getFullYear();
+  const io = new IntersectionObserver((es) => es.forEach(e => { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } }), { threshold: .12 });
+  document.querySelectorAll('.reveal').forEach(el => io.observe(el));
+  function setLang(l) { document.documentElement.lang = l; document.querySelectorAll('.lang button').forEach(b => b.classList.toggle('on', b.dataset.lang === l)); try { localStorage.setItem('lang', l); } catch (e) {} }
+  document.querySelectorAll('.lang button').forEach(b => b.addEventListener('click', () => setLang(b.dataset.lang)));
+  try { const saved = localStorage.getItem('lang'); if (saved === 'es' || saved === 'en') setLang(saved); else if (/^es/i.test(navigator.language)) setLang('es'); } catch (e) {}
+  (function () {
+    const form = document.getElementById('bookForm'), fb = document.getElementById('bookFallback'), out = document.getElementById('bookText');
+    form.addEventListener('submit', function (e) {
+      e.preventDefault();
+      const f = form.elements; let ok = true;
+      ['name', 'phone'].forEach(n => { const bad = !f[n].value.trim(); f[n].style.borderColor = bad ? '#c8704a' : ''; if (bad) ok = false; });
+      if (!ok) return;
+      const lines = ["Lare's Garden request", 'Name: ' + f.name.value.trim(), 'Phone: ' + f.phone.value.trim(), 'City: ' + f.city.value, 'Plan: ' + f.plan.value];
+      if (f.details.value.trim()) lines.push('Yard: ' + f.details.value.trim());
+      const msg = lines.join('\n'); out.value = msg; fb.hidden = false;
+      const sep = /iPhone|iPad|iPod/i.test(navigator.userAgent) ? '&' : '?';
+      window.location.href = 'sms:+16504008326' + sep + 'body=' + encodeURIComponent(msg);
+    });
+    document.getElementById('bookCopy').addEventListener('click', function () { out.select(); try { navigator.clipboard.writeText(out.value); } catch (e) { document.execCommand('copy'); } });
+  })();
+</script>
+<script src="https://smb.airoxlab.com/api/t/script" defer></script>
+</body>
+</html>
